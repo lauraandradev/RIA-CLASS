@@ -1,14 +1,18 @@
-const posicaoCircular = require('./factorialMathFunction');
+const mathFactorial = require('./factorialMathFunction');
 
 describe('Testa a função posicaoCircular', () => {
-    test('Ponto inicial (t = 0)', () => {
-        const resultado = posicaoCircular(0);
-        expect(resultado).toEqual([1, 0]);
+    test('Fatorial de 0', () => {
+        const resultado = mathFactorial(5);
+        expect(resultado).toEqual(120);
     });
 
-    test('Ponto no topo do círculo (t = π/2)', () => {
-        const resultado = posicaoCircular(Math.PI / 2);
-        expect(resultado[0]).toBeCloseTo(0);
-        expect(resultado[1]).toBeCloseTo(1);
+    test('Fatorial de 0', () => {
+        const resultado = mathFactorial(0);
+        expect(resultado).toEqual(0);
+    });
+
+    test('Fatorial de 1', () => {
+        const resultado = mathFactorial(1);
+        expect(resultado).toEqual(1);
     });
 });

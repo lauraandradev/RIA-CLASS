@@ -1,5 +1,13 @@
-function posicaoCircular(t) {
-    return [Math.cos(t), Math.sin(t)];
-}
+function mathFactorial(number) {
+    var result = number;
+    if (number === 0 || number === 1) 
+      return 1; 
+    while (number > 1) { 
+      number--;
+      result *= number;
+    }
+    return result;
+  }
+  mathFactorial(5);
 
-module.exports = posicaoCircular;
+module.exports = mathFactorial;
