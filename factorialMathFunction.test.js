@@ -8,7 +8,7 @@ describe('Testa a função posicaoCircular', () => {
 
     test('Fatorial de 0', () => {
         const resultado = mathFactorial(0);
-        expect(resultado).toEqual(0);
+        expect(resultado).toEqual(1);
     });
 
     test('Fatorial de 1', () => {
