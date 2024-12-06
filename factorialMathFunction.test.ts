@@ -1,4 +1,4 @@
-const mathFactorial = require('./factorialMathFunction');
+import { mathFactorial } from './factorialMathFunction';
 
 describe('Testa a função posicaoCircular', () => {
     test('Fatorial de 0', () => {
